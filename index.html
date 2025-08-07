@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitBill | by Daynan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+ <header>
+    <div class="header">
+        <h1> <i class="fas fa-receipt"></i> SplitBill</h1>
+        <p>Split expenses with friends easily!</p>
+    </div>
+ </header>
+ <div class="feature-section">
+    <main>
+      <section class="friends-section">
+          <div class="friends">
+              <h3><i class="fas fa-users"></i> Friends</h3><hr>
+            <div class="modal-overlay" id="friend-modal">
+                <div class="modal">
+                  <h3>Add Friend</h3>
+                  <input type="text" id="friend-name-input" placeholder="Friend's name">
+                  <div class="modal-buttons">
+                    <button id="cancel-friend-btn" class="btn cancel">Cancel</button>
+                    <button id="confirm-friend-btn" class="btn confirm">Add Friend</button>
+                  </div>
+                </div>
+            </div>
+            <div class="friend-list" id="friend-list"></div>
+            <button class="btn-friends btn" id="open-modal-btn">
+              <i class="fas fa-plus"></i> Add Friend
+            </button> 
+          </div>
+      </section> 
+      <section class="items-section">
+            <div class="items">
+              <h3><i class="fas fa-utensils"></i> Items</h3><hr>
+              <div class="modal-overlay" id="item-modal">
+                <div class="modal">
+                  <h3>Add Item</h3>
+                  <input type="text" id="item-name-input" placeholder="Item name">
+                  <input type="number" id="item-price-input" placeholder="Item price" min="0" >
+                  <select id="item-friend-select">
+                    <option value="">Select Friend</option>
+                  </select>
+                  <div class="modal-buttons">
+                    <button id="cancel-item-btn" class="btn cancel">Cancel</button>
+                    <button id="confirm-item-btn" class="btn confirm">Add Item</button>
+                  </div>
+                </div>
+            </div>
+            <div class="item-list" id="item-list"></div>
+            <button class="btn-items btn" id="open-item-modal">
+              <i class="fas fa-plus"></i> Add Item
+            </button>
+            </div>
+      </section>     
+      <section class="bill-settings-section">
+            <div class="bill-settings">
+                <h3><i class="fas fa-cog"> </i> Bill Settings</h3><hr>
+            <div class="rates-container">
+                <div class="taxrate"> 
+                <label for="taxrate">Tax Rate(%)</label>
+                <input id="taxrate" type="number" name="taxrate" value="15" >
+              </div>
+              <div class="tiprate">
+                <label for="tiprate">Tip Rate(%)</label>
+                <input type="number" name="tiprate" id="tiprate" value="10">
+              </div>
+              <div class="split-mode">
+                <label for="split-mode">Split Mode</label>
+                <select name="split-mode" id="split-mode">
+                    <option value="equal">Equal Split</option>
+                    <option value="by-item">By Item</option>
+                </select>
+                </div>
+            <div class="random-tip-payer">
+               <button id="random-tip-btn" class="random-btn"><i class="fas fa-random"></i> Random Tip Payer</button>
+            </div>
+            </div>
+            </div>
+      </section>    
+    </main>      
+    <section class="bill-summary-section">
+          <div class="bill-summary">
+                <h3><i class="fas fa-calculator"></i> Bill Summary</h3> <hr>
+              <ul class="summary-list">
+                  <li>Subtotal <span> $0.00</span></li>
+                  <li>Tax <span> $0.00</span></li>
+                  <li>Tip <span> $0.00</span></li>
+                  <li>Total <span> $0.00</span></li>
+              </ul>
+              <section class="payment-breakdown">
+                <div class="payment-result">
+                  <h4><i class="fas fa-wallet"></i> Who Pays What?</h4>
+                  <div id="payment-details"></div>
+                </div>
+              </section>
+              <p>Add some items to calculate the split!</p>
+          </div>
+    </section>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
