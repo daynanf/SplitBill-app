@@ -1,6 +1,6 @@
 # 💸 SplitBill App | Built by Dinu
 
-[Live Demo 👉 Click to Open](https://daynanf.github.io/SplitBill-app/)
+[Live Demo 👉 Click to Open](https://splitbill-daynan.netlify.app/)
 
 SplitBill is a stylish, interactive bill-splitting web application designed to make group expenses simple and fun. Whether you're splitting dinner, a trip, or a party — this app does the math for you!
 
@@ -31,7 +31,7 @@ SplitBill is a stylish, interactive bill-splitting web application designed to m
 
 ## 🔗 Live Website
 
-🌐 [https://daynanf.github.io/SplitBill-app/](https://daynanf.github.io/SplitBill-app/)
+🌐 [https://daynanf.github.io/SplitBill-app/](https://splitbill-daynan.netlify.app/)
 
 ---
 
