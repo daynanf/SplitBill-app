@@ -1,4 +1,4 @@
-# 💸 SplitBill App | Built by Dinu
+#  SplitBill 
 
 [Live Demo 👉 Click to Open](https://splitbill-daynan.netlify.app/)
 
@@ -6,20 +6,20 @@ SplitBill is a stylish, interactive bill-splitting web application designed to m
 
 ---
 
-## ✨ Features
+##  Features
 
-- 👨‍👩‍👧‍👦 Add friends with fun emoji avatars
-- 🧾 Add items with name, price, and who ordered them
-- 💡 Choose **Split Mode**:
+-  Add friends with fun emoji avatars
+-  Add items with name, price, and who ordered them
+-  Choose **Split Mode**:
   - **Equally**: Split everything fairly
   - **By Item**: Only pay for what you ordered
-- 📈 Live summary with Subtotal, Tax, Tip, and Total
-- 🎲 Optional **Random Tip Payer** mode
-- 📱 Responsive, scrollable UI for clean layout
+-  Live summary with Subtotal, Tax, Tip, and Total
+-  Optional **Random Tip Payer** mode
+-  Responsive, scrollable UI for clean layout
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Language | Usage       |
 |----------|-------------|
@@ -35,7 +35,7 @@ SplitBill is a stylish, interactive bill-splitting web application designed to m
 
 ---
 
-## 🚀 Getting Started (Optional for GitHub Visitors)
+##  Getting Started (Optional for GitHub Visitors)
 
 To run it locally:
 
